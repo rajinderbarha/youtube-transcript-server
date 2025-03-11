@@ -58,4 +58,10 @@ app.get("/transcript", async (req, res) => {
     }
 });
 
+app.get("/", async (req, res) => {
+    console.log("working");
+    res.status(200).json({ message: "working" });
+});
+
+
 app.listen(3000, () => console.log("Server running on port 3000"));
